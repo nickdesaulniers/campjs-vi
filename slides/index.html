@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CampJS VI</title>
+    <link rel="stylesheet" href="../reveal.js-2.6.2/css/reveal.min.css"/>
+    <link rel="stylesheet" href="../reveal.js-2.6.2/css/theme/fxos.css" id="theme"/>
+    <link rel="stylesheet" href="../reveal.js-2.6.2/lib/css/zenburn.css"/>
+    <link rel="stylesheet" href="../mozilla-tabzilla/css/tabzilla.css" media="screen" />
+    <style>
+      #dino {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        width: 5%;
+        min-width: 50px;
+        z-index: 30;
+      }
+      #twit {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        z-index: 30;
+        color: #FF9500;
+      }
+      .reveal p, .reveal small, .reveal li {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+  <img id="dino" src="dino.svg" alt="Mozilla Dino Head Logo"/>
+  <div id="tabzilla">
+    <a href="https://www.mozilla.org/">Mozilla</a>
+  </div>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>CAMPJS VI</h2>
+          <a href="webvr.html">WebVR</a>
+          <a href="wasm.html">WASM</a>
+        </section>
+      </div>
+    </div>
+    <a id="twit" href="https://twitter.com/LostOracle">@LostOracle</a>
+    <script src="../reveal.js-2.6.2/lib/js/head.min.js"></script>
+    <script src="../reveal.js-2.6.2/js/reveal.js"></script>
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        dependencies: [
+           { src: '../reveal.js-2.6.2/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        ],
+      });
+    </script>
+  </body>
+</html>
+
