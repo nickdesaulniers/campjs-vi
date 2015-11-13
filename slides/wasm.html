@@ -42,6 +42,7 @@
         <section>
           <h2>What's WASM?</h2>
           <p>A Bytecode for the web.</p>
+          <p>Binary and textual representation.</p>
         </section>
         <section>
           <h2>Work in progress by all browser vendors</h2>
@@ -62,6 +63,8 @@
         <section>
           <h2>Improvement from ASM.js</h2>
           <p>Start up time</p>
+          <p><a href="https://github.com/WebAssembly/design/blob/master/BinaryEncoding.md#why-a-binary-encoding-instead-of-a-text-only-representation">30%</a> smaller than gzipped asm.js</p>
+          <p>Can be parsed <a href="https://github.com/WebAssembly/design/blob/master/BinaryEncoding.md#why-a-binary-encoding-instead-of-a-text-only-representation">23x faster than large asm.js modules</a></p>
         </section>
         <section>
           <h2>Encodes an AST</h2>
@@ -83,7 +86,21 @@
           </section>
         </section>
         <section>
-          <h2>Who Cleans Up Around Here?</h2>
+          <section>
+            <h2>Running other languages in the browser</h2>
+            <p>not a priority for mvp</p>
+          </section>
+          <section>
+            <h2>GC Coordination</h2>
+            <img src="../gc_coord.png" alt="garbage collection coordination">
+            <p>Which GC cleans up?</p>
+            <p>Do <a href="https://lists.webkit.org/pipermail/webkit-dev/2011-December/018811.html">GC's compete?</a></p>
+          </section>
+        </section>
+        <section>
+          <h2>Where can I learn more?</h2>
+          <p><a href="https://github.com/WebAssembly/design">WebAssembly/design</a></p>
+          <p><a href="http://nickdesaulniers.github.io/wasm-fowa/slides/#/">more info</a></p>
         </section>
       </div>
     </div>
